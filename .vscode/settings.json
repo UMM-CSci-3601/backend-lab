@@ -66,6 +66,7 @@
       "mongoimport",
       "mongojack",
       "mongoseed",
+      "mongosh",
       "mongotest",
       "Moonan",
       "msix",
