@@ -5,15 +5,11 @@ This is a guide to setting up the development environment for this project as we
 - [Setup](#setup)
   - [Make sure you have Mongo running on your computer](#make-sure-you-have-mongo-running-on-your-computer)
   - [Open the project in VS Code](#open-the-project-in-vs-code)
-  - [Installing the client dependencies](#installing-the-client-dependencies)
   - [Seeding the Database](#seeding-the-database)
 - [Running the project](#running-the-project)
   - [MongoDB in VS Code](#mongodb-in-vs-code)
 - [Testing and Continuous Integration](#testing-and-continuous-integration)
-  - [Testing the client](#testing-the-client)
-    - [Linting the client](#linting-the-client)
   - [Testing the server](#testing-the-server)
-  - [End to end testing](#end-to-end-testing)
   - [GitHub Actions](#github-actions)
 
 ## Setup
@@ -26,7 +22,7 @@ For all of this to work, it's critical that you have Mongo installed
 and working. This should be true for all the lab computers, but if you want
 to also work on your own computer you will need to set it up there as well.
 
-If you're unsure if it's set up and working correctly, try running `mongo`.
+If you're unsure if it's set up and working correctly, try running `mongo` or `mongod` or `mongosh`.
 If your MongoDB server isn't running you'll likely get an error
 message like:
 
@@ -49,22 +45,11 @@ Don't worry if you don't get the dialog, it is probably because you already have
 
 Like in previous labs, click "Install All" to automatically install them.
 
-### Installing the client dependencies
-
-Before you start working you will need to install the dependencies for the client.
-
-1. Move into the `client` directory (`cd client`)
-2. Run `npm install`
-
 ### Seeding the Database
 
 To give yourself some data to work with instead of starting with an empty database in our development environment, you need to 'seed' the database with some starter data. Seed data and the seed script are stored in the top level directory `database`. To seed the database, move into that directory and run `./mongoseed.sh` (or `.\mongoseed.bat` on Windows). This will take each of the JSON files in `database/seed/` and insert their elements into the `dev` database.
 
 These scripts also drop the database before seeding it so it is clean. You should run this after first cloning the project and again anytime you want to reset the database or you add new seed data to the `database/seed/` directory.
-
-:warning: Our example E2E tests also reseed the `dev` database
-whenever you run them to ensure that those tests happen in a predictable
-state, so be prepared for that.
 
 :exclamation: You'll want to create your own seed files and add them to the
 `database/seed/` directory for new types used by your project. There
@@ -117,34 +102,7 @@ You can explore the databases and collections here. You can click a record to vi
 
 ## Testing and Continuous Integration
 
-There are numerous testing options! You should definitely add:
-
-- JUnit tests for your server code
-- Karma/Angular tests for your client code
-- End-to-end (E2E) tests that exercise the entire system
-
-### Testing the client
-
-From the `client` directory, `ng test` runs the client tests.
-
-- This will pop up a Chrome window with the results of the tests.
-- This will run "forever", updating both in your terminal and in the Chrome
- window that gets generated. Typing CTRL-C in the terminal window will end
- the `ng test` process and close the generated Chrome window.
-- You can add `ng test --no-watch` if you just want to run the tests
-  once instead of going into the "run forever" mode.
-- You can add `ng test --code-coverage` if you want to compute the code
-  coverage.
-  - It outputs the test coverage percentages and will fail if any are lower than 80%.
-  - It generates a coverage report you can find in your client directory
-    `client/coverage/client/index.html`.
-  - Right click on `index.html` in VSCode and select `Copy path` and paste it into your browser of choice. You can also drag and drop `index.html` onto the tab area of your browser and it will open it.
-- We frequently combine these with `ng test --no-watch --code-coverage`.
-
-#### Linting the client
-
-We have included a tool called ESLint which helps analyze the client
-TypeScript and template HTML code and catch various errors and concerns. You will most likely see it directly in VS Code as yellow and red underlines. You can also directly run the linter on the entire client by running `ng lint` in the terminal in the `client` directory. This will check the whole client project and tell you if there are any issues.
+There are numerous testing options we will use in this course, but for now, you should definitely add: JUnit tests for your server code. We will add other types of tests as we progress throughout the semester.
 
 ### Testing the server
 
@@ -164,31 +122,10 @@ From the `server` directory, `./gradlew test` runs the server tests once.
 
 In addition to these automated server tests, you might want to manually explore the requests and different parameters at the API level. To see what is happening and explore your API, you can use [Thunder Client](https://www.thunderclient.com/). There are more instructions about how to do this in [here](THUNDER_CLIENT.md).
 
-### End to end testing
-
-End to end (E2E) testing involves the whole software stack rather than one part of it. Our E2E tests look at the behavior of both the client,
-the server, and the database, and how they interact by simulating how a real user would interact with the app.
-
-We use [Cypress](https://www.cypress.io/) for our end-to-end tests. There are a few ways to run the E2E tests. They are all started from the `client` directory and require the server be running at the same time (`./gradlew run` in the `server` directory).
-
-- `ng e2e` both builds and serves the client and runs through all the Cypress end-to-end tests once.
-- `ng e2e --watch` builds and serves the client but just opens Cypress for you to be able to run the tests you want without closing automatically.
-  - This is the same as running `ng serve` and `npm run cy:open` (or `npx cypress open`) at the same time. If you are already running `ng serve` it will be easier to do this rather than closing it and running `ng e2e`.
-
-The main page of Cypress looks like this:
-
-![image](https://user-images.githubusercontent.com/1300395/109009410-22f99d00-7674-11eb-9469-dd6a09710813.png)
-
-You can click on any of the integration test files to run their tests or run them all. When you run a set of tests you will see something like this:
-
-![image](https://user-images.githubusercontent.com/1300395/109009528-3f95d500-7674-11eb-86ee-8c5e375d5d0b.png)
-
-There are a lot of neat things you can do here like inspect each test and find which selectors to use in the tests you are writing. We encourage you to look through some of the Cypress documentation linked in the "Resources" section below.
-
 ### GitHub Actions
 
-There are several GitHub Actions workflows set up in the repo:
+There are a couple of GitHub Actions workflows set up in this repo:
 
-- [Server Java](../../actions/workflows/server.yml) - JUnit tests for the server (`gradle-build`)
-- [Client Angular](../../actions/workflows/client.yaml) - Karma tests (`ng-test`) and ESLint linting (`ng-lint`) for the client
-- [End to End](../../actions/workflows/e2e.yaml) - Cypress tests for end-to-end testing
+- [Server Java](../../.github/workflows/server.yml) - JUnit tests for the server (`gradle-build`)
+- [Code Quality/Security](../../.github/workflows/codeql.yml) - Checks for code security (`CodeQL / Analyze (java-kotlin)`)
+  

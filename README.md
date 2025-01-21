@@ -1,30 +1,11 @@
-# CSCI 3601 Iteration Template <!-- omit in toc -->
+# CSCI 3601 Backend Lab <!-- omit in toc -->
 
 - [Development](#development)
   - [Common commands](#common-commands)
-- [Deployment](#deployment)
 - [Resources](#resources)
-- [Changing the name](#changing-the-name)
 - [Contributors](#contributors)
 
-This is your starter code for Iteration 1.
-
-There is quite a lot of example code in this production template that you don't
-want or need down the road, but is included to help you get started.
-As you work on your project, you should replace these pieces with
-elements of your project and _remove whatever you don't need_ (e.g., markdown
-files, JSON data files, or any remnants of the labs). We include, for example,
-the `User` parts of the previous labs. These are almost certainly not relevant
-to your project and should be removed once you've started.
-
-:bangbang: Keeping things like the support for our `User` types will
-artificially inflate your test coverage results, making it look like you have
-much better coverage than you actually do. This is neither cool nor helpful,
-so you really should remove our code fairly early in your iteration.
-
-:exclamation: You should remove this sentence and the text above, and
-replace them with at least an elevator pitch description of your project so that
-if someone comes to this repo they'll know what the project is about.
+This is your starter code for the Backend Lab for CSci 3601.
 
 ## [Development](DEVELOPMENT.md)
 
@@ -40,44 +21,17 @@ From the `server` directory:
 - `./gradlew checkstyleTest` to run Checkstyle on the server Java code in the `src/test` folder
 - `./gradlew check` will run the tests, run the Checkstyle checks, and generate coverage reports in one command
 
-From the `client` directory:
-
-- `ng serve` to run the client
-- `ng test` to test the client
-  - Or `ng test --no-watch --code-coverage` to run the client tests once and
-    also compute the code coverage.
-- `ng e2e` and `ng e2e --watch` to run end-to-end tests
-
 From the `database` directory:
 
 - `./mongoseed.sh` (or `.\mongoseed.bat` on Windows) to seed the database
-
-## [Deployment](DEPLOYMENT.md)
-
-Instructions on how to create a DigitalOcean Droplet and setup your project are in [the deployment guide](DEPLOYMENT.md).
 
 ## [Resources](RESOURCES.md)
 
 Additional resources on tooling and techniques are in [the resources list](RESOURCES.md).
 
-## Changing the name
-
-The project by default has the name "CSCI 3601 Iteration Template". There are a few places you need to change to make this the name you want:
-
-- The title in this README.md
-- [`client/src/app/app.component.ts`](client/src/app/app.component.ts)
-  - The `title` variable
-  - Also the associated unit and E2E tests will need to be changed.
-- [`client/src/app/app.component.html`](client/src/app/app.component.html)
-  - The `mat-toolbar` element for the navigation drawer is just "Client" by default.
-- [`client/src/index.html`](client/src/index.html)
-  - The `title` element
-
-You can go ahead and remove this section of the README once you have changed the name.
-
 ## Contributors
 
-The contributors to this project can be seen [here](../../graphs/contributors).
+This lab may not have preserved git history for the many years of development. Much of that development took place in the repo for the [iteration template](https://github.com/UMM-CSci-3601/3601-iteration-template) and the repos for labs from past years such as [Client/server Lab](https://github.com/UMM-CSci-3601/3601-lab2_client-server) and [Mongo Lab](https://github.com/UMM-CSci-3601/3601-lab4-mongo) The contributors to the iteration template project can be seen [here](https://github.com/UMM-CSci-3601/3601-iteration-template/graphs/contributors).
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
