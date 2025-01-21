@@ -59,19 +59,15 @@ can use to easily generate sophisticated seed data for your project.
 
 ## Running the project
 
-- The **run** Gradle task (`./gradlew run` in the `server` directory) will still run your Javalin server (a.k.a., the _server side_ of your application), which is available at [`localhost:4567`](http://localhost:4567).
+- The **run** Gradle task (`./gradlew run` in the `server` directory) will still run your Javalin server (a.k.a., the _server side_ of your application), which is available at localhost:4567.
 - The **build** task will still _build_ the server (including running Checkstyle
   and all the tests), but not run it.
-
-Once you have successfully run `npm install`, in order to serve up the _client side_ of your project, you will run
-`ng serve` (from the `client` directory as well). The client will be available by default at [`localhost:4200`](http://localhost:4200). If your server is running, you will be able to see data for users if you navigate to the right place in the project.
 
 To recap, **here are the steps needed to _run_ the project**:
 
 1. Go into the `server` directory and enter `./gradlew run`.
-2. In a _different_ terminal, go into the `client` directory and enter `ng serve`.
-3. You can then go to [`localhost:4200`](http://localhost:4200) in your favorite web browser and see
-   your nifty Angular app.
+2. In the client directory, right click on the file and copy the path.
+3. Paste the path into a browser to visit the page.
 
 ### MongoDB in VS Code
 
@@ -126,6 +122,6 @@ In addition to these automated server tests, you might want to manually explore 
 
 There are a couple of GitHub Actions workflows set up in this repo:
 
-- [Server Java](../../.github/workflows/server.yml) - JUnit tests for the server (`gradle-build`)
-- [Code Quality/Security](../../.github/workflows/codeql.yml) - Checks for code security (`CodeQL / Analyze (java-kotlin)`)
+- [Server Java](./.github/workflows/server.yml) - JUnit tests for the server (`gradle-build`)
+- [Code Quality/Security](./.github/workflows/codeql.yml) - Checks for code security (`CodeQL / Analyze (java-kotlin)`)
   
