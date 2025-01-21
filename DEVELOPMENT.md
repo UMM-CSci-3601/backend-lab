@@ -59,7 +59,7 @@ can use to easily generate sophisticated seed data for your project.
 
 ## Running the project
 
-- The **run** Gradle task (`./gradlew run` in the `server` directory) will still run your Javalin server (a.k.a., the _server side_ of your application), which is available at [`localhost:4567`](http://localhost:4567).
+- The **run** Gradle task (`./gradlew run` in the `server` directory) will still run your Javalin server (a.k.a., the _server side_ of your application), which is available at localhost:4567.
 - The **build** task will still _build_ the server (including running Checkstyle
   and all the tests), but not run it.
 
@@ -123,7 +123,5 @@ In addition to these automated server tests, you might want to manually explore 
 There are a couple of GitHub Actions workflows set up in this repo:
 
 - [Server Java](./.github/workflows/server.yml) - JUnit tests for the server (`gradle-build`)
-- [Server Java](./actions/workflows/server.yml) - JUnit tests for the server (`gradle-build`)
-- [Code Quality/Security](../actions/workflows/codeql.yml) - Checks for code security (`CodeQL / Analyze (java-kotlin)`)
-- [Code Quality/Security](../.github/workflows/codeql.yml) - Checks for code security (`CodeQL / Analyze (java-kotlin)`)
+- [Code Quality/Security](./.github/workflows/codeql.yml) - Checks for code security (`CodeQL / Analyze (java-kotlin)`)
   
