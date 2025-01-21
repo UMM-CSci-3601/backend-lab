@@ -122,6 +122,8 @@ In addition to these automated server tests, you might want to manually explore 
 
 There are a couple of GitHub Actions workflows set up in this repo:
 
-- [Server Java](../../actions/workflows/server.yml) - JUnit tests for the server (`gradle-build`)
-- [Code Quality/Security](../../actions/workflows/codeql.yml) - Checks for code security (`CodeQL / Analyze (java-kotlin)`)
+- [Server Java](./.github/workflows/server.yml) - JUnit tests for the server (`gradle-build`)
+- [Server Java](./actions/workflows/server.yml) - JUnit tests for the server (`gradle-build`)
+- [Code Quality/Security](../actions/workflows/codeql.yml) - Checks for code security (`CodeQL / Analyze (java-kotlin)`)
+- [Code Quality/Security](../.github/workflows/codeql.yml) - Checks for code security (`CodeQL / Analyze (java-kotlin)`)
   
