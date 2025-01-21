@@ -66,8 +66,6 @@ can use to easily generate sophisticated seed data for your project.
 To recap, **here are the steps needed to _run_ the project**:
 
 1. Go into the `server` directory and enter `./gradlew run`.
-2. In the client directory, right click on the file and copy the path.
-3. Paste the path into a browser to visit the page.
 
 ### MongoDB in VS Code
 

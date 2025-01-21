@@ -4,9 +4,9 @@
 ; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
 ;
 [subrepo]
-	remote = https://github.com/UMM-CSci-3601/3601-basic-client.git
+	remote = https://github.com/UMM-CSci-3601/3601-server.git
 	branch = main
-	commit = ac4814999e4667cb3aeb3c9eef0d82e8b24fccca
-	parent = a811e7cab0aa91ea16aef9c798357d581db21f38
+	commit = 7b8b9ffca0fd664fa39abbb444428f005bafa90b
+	parent = 43286a492280c78a40c56835f36b3156d03428c6
 	method = merge
 	cmdver = 0.4.9
