@@ -383,6 +383,7 @@ public class UserController implements Controller {
    *
    * @param server The Javalin server instance
    */
+  @Override
   public void addRoutes(Javalin server) {
     // Get the specified user
     server.get(API_USER_BY_ID, this::getUser);
