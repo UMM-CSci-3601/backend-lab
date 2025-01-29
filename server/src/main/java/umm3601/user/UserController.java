@@ -357,7 +357,8 @@ public class UserController implements Controller {
   }
 
   /**
-   * Setup routes for the `user` collection endpoints.
+   * A UserController instance handles the user endpoints.
+   * This addRoutes method sets up routes for the `user` collection endpoints.
    *
    * These endpoints are:
    *   - `GET /api/users/:id`
@@ -381,7 +382,6 @@ public class UserController implements Controller {
    * add the routes for that controller's data.
    *
    * @param server The Javalin server instance
-   * @param userController The controller that handles the user endpoints
    */
   public void addRoutes(Javalin server) {
     // Get the specified user
