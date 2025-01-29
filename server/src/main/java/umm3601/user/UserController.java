@@ -357,8 +357,9 @@ public class UserController implements Controller {
   }
 
   /**
-   * A UserController instance handles the user endpoints.
-   * This addRoutes method sets up routes for the `user` collection endpoints.
+   * Sets up routes for the `user` collection endpoints.
+   * A UserController instance handles the user endpoints,
+   * and the addRoutes method adds the routes to this controller.
    *
    * These endpoints are:
    *   - `GET /api/users/:id`
