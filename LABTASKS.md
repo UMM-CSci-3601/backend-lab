@@ -318,7 +318,7 @@ _why_ we'd want to have it.
 
 :bangbang: Have your project running (see the README), and use these links -- they should actually work and generate results from your server.
 
-- [ ] :question: _7_ Describe what happens when you filter users by age in the client.
+- [ ] :question: _6_ Describe what happens when you filter users by age in the client.
 
   - [ ] What exactly is the request that is sent to the server?
   - [ ] How does the server react to the request?
