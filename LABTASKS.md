@@ -309,8 +309,6 @@ _why_ we'd want to have it.
       Explain what happens when a user accesses each of the
       following URLs:
 
-  - [ ] :question: The page `users`
-    - <http://localhost:4567/users.html>
   - [ ] :question: The page `api/users`
     - <http://localhost:4567/api/users>
   - [ ] :question: The page `api/users?age=25`
