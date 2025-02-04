@@ -4,7 +4,6 @@
 - [Exploring the project](#exploring-the-project)
 - [Exploring the server](#exploring-the-server)
   - [Use Thunder Client to explore API output](#use-thunder-client-to-explore-api-output)
-- [Exploring the client](#exploring-the-client)
 - [Use GitHub Projects to support Agile development](#use-github-projects-to-support-agile-development)
   - [Setting up the GitHub Projects board](#setting-up-the-github-projects-board)
   - [Using the board](#using-the-board)
@@ -86,13 +85,7 @@ Change that to `http://localhost:4567/api/<the-route-you-want-to-test>` (ie. `ht
 
 The response will be on the right column. You can also change the query parameters from this window.
 
-## Exploring the client
-
-The client resources are in `client`, which
-contains the necessary HTML, CSS, and JavaScript files to
-construct the _very_ simple client-side web app.
-
-:question: Answer questions _6_ and _7_ [QUESTIONS](./LABTASKS.md#questions)
+:question: Answer question _6_ [QUESTIONS](./LABTASKS.md#questions)
 
 ## Use GitHub Projects to support Agile development
 
