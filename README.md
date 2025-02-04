@@ -93,7 +93,7 @@ From the server directory you can use Gradle to run the server:
 
 Your server should now be running on port 4567, the port we've configured Javalin to
 run on.
-Visit it at [http://localhost:4567][local] in your web browser.
+Visit it at [http://localhost:4567/api][local] in your web browser.
 
 The server will continue to run indefinitely until you stop it. You can
 stop it by typing `Control-C` (often written `^C`) in the terminal where
