@@ -139,6 +139,9 @@ so you can see how well your tests cover (i.e., exercise) your code. The command
 ```
 
 will run the tests followed by the test coverage report generator. This report is a "website" like the one from JUnit above. To see the report open the file in your browser:
+Navigate to `server > build > jacocoHtml` and copy the path of `index.html` by right-clicking on it and selecting `Copy Path`.
+
+Paste this path into your browser's navigation bar. The path should end with:
 
 ```text
 server/build/jacocoHtml/index.html
