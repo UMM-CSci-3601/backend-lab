@@ -316,4 +316,4 @@ _why_ we'd want to have it.
   - [ ] What exactly is the request that is sent to the server?
   - [ ] How does the server react to the request?
   - [ ] What reply does the database send back to the server?
-  - [ ] What is the response to the client?
+  - [ ] What is the response to the client (What information is included in the response can you see in Thunder Client)?
