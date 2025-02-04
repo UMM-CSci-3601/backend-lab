@@ -93,7 +93,7 @@ From the server directory you can use Gradle to run the server:
 
 Your server should now be running on port 4567, the port we've configured Javalin to
 run on.
-Visit it at [http://localhost:4567][local] in your web browser.
+Visit it at [http://localhost:4567/api][local] in your web browser.
 
 The server will continue to run indefinitely until you stop it. You can
 stop it by typing `Control-C` (often written `^C`) in the terminal where
@@ -139,6 +139,9 @@ so you can see how well your tests cover (i.e., exercise) your code. The command
 ```
 
 will run the tests followed by the test coverage report generator. This report is a "website" like the one from JUnit above. To see the report open the file in your browser:
+Navigate to `server > build > jacocoHtml` and copy the path of `index.html` by right-clicking on it and selecting `Copy Path`.
+
+Paste this path into your browser's navigation bar. The path should end with:
 
 ```text
 server/build/jacocoHtml/index.html
