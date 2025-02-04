@@ -164,6 +164,12 @@ we've chosen to not over-complicate the project with attempts to test
 that code. You are not obliged to provide any coverage for that. You
 should make sure your tests cover things like your `ToDoController` and the like, though.
 
+## Database Instructions
+
+We will be using MongoDB for this lab and future labs. To give yourself some data to work with instead of starting with an empty database in our development environment, you need to 'seed' the database with some starter data. Seed data and the seed script are stored in the top level directory `database`. To seed the database, move into that directory and run `./mongoseed.sh` (or `.\mongoseed.bat` on Windows). This will take each of the JSON files in `database/seed/` and insert their elements into the `dev` database.
+
+Take a look at [DEVELOPMENT.md][development] for more on setting up Mongo and using MongoDB in VS Code.
+
 ## Live updates for Gradle test or run
 
 By default, if you're running the server with `./gradlew run` and make changes
@@ -215,6 +221,7 @@ to [LABTASKS.md][labtasks], where most of the actual work of the lab is describe
 [gradle]: https://gradle.org/
 [jsonvue-chrome]: https://chrome.google.com/webstore/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc?hl=en
 [labtasks]: LABTASKS.md
+[development]: DEVELOPMENT.md
 [local]: http://localhost:4567/
 [rest-best-practices]: https://medium.com/@mwaysolutions/10-best-practices-for-better-restful-api-cbe81b06f291
 
