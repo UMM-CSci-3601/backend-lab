@@ -8,7 +8,7 @@
 - [Use GitHub Projects to support Agile development](#use-github-projects-to-support-agile-development)
   - [Setting up the GitHub Projects board](#setting-up-the-github-projects-board)
 - [Creating a GitHub projects board](#creating-a-github-projects-board)
-- [Linking your project board to your repository](#linking-your-project-board-to-your-repository)
+- [Make sure your project is linked to your repository](#make-sure-your-project-is-linked-to-your-repository)
   - [Using the board](#using-the-board)
 - [The epics/features](#the-epicsfeatures)
 - [Questions](#questions)
@@ -145,14 +145,25 @@ Once you have created a milestone, you will be ready to create a GitHub Projects
 6. [ ] Create drafts for your issues
    1. [ ] Select the first text box on the project board
    2. [ ] Type the name of your first issue and press enter
-   3. [ ] Repeat until all of your issues have been entered
-   4. [ ] Your screen should look something like this: 
-  
-## Linking your project board to your repository
+   3. [ ] Repeat until all of your issues have been entered as drafts
+   4. [ ] Your screen should look something like this:
+![Image](https://github.com/user-attachments/assets/2a4e044d-adfb-4842-a35d-0232dab04f80)
+7. [ ] Now it is time to convert your drafts to issues and link them to your repository
+   1. [ ] Hover over your first draft and click the down arrow on the left of the line
+   2. [ ] Select `Convert to issue` from the dropdown menu
+   3. [ ] Search for your repository in the dropdown menu and then select it
+   4. [ ] Repeat this for each of your drafts so each of them now have a green icon to the left of their title
+   5. [ ] Your project board should look something like this:
+![Image](https://github.com/user-attachments/assets/b4015b48-78fd-40b7-a360-62c08b15fa1f)
 
-1. [ ] Click the `Projects` tab on your GitHub repository
-2. [ ] Select the green `+ New Project` button
-3. [ ] In the popup dialog, choose the `Feature release` template
+## Make sure your project is linked to your repository
+
+1. [ ] Navigate back to your repository
+2. [ ] Click the `Projects` tab on your GitHub repository
+3. [ ] You should now see the project you just made
+4. [ ] Select the `Link a Project` button
+5. [ ] Make sure your project has a checked box in the dropdown
+6. [ ] Now go to the `Issues` tab in you repository and make sure you have all the issues you added to your project  
 
 The view that you see will have several views, each focused on a
 different way of thinking about the state of your project.
