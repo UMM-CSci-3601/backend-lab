@@ -93,7 +93,7 @@ From the server directory you can use Gradle to run the server:
 
 Your server should now be running on port 4567, the port we've configured Javalin to
 run on.
-Visit it at [http://localhost:4567][local] in your web browser.
+Visit it at [http://localhost:4567/api][local] in your web browser.
 
 The server will continue to run indefinitely until you stop it. You can
 stop it by typing `Control-C` (often written `^C`) in the terminal where
@@ -139,6 +139,9 @@ so you can see how well your tests cover (i.e., exercise) your code. The command
 ```
 
 will run the tests followed by the test coverage report generator. This report is a "website" like the one from JUnit above. To see the report open the file in your browser:
+Navigate to `server > build > jacocoHtml` and copy the path of `index.html` by right-clicking on it and selecting `Copy Path`.
+
+Paste this path into your browser's navigation bar. The path should end with:
 
 ```text
 server/build/jacocoHtml/index.html
@@ -160,6 +163,12 @@ HTTP requests, and are mostly configuration rather than "logic", so
 we've chosen to not over-complicate the project with attempts to test
 that code. You are not obliged to provide any coverage for that. You
 should make sure your tests cover things like your `ToDoController` and the like, though.
+
+## Database Instructions
+
+We will be using MongoDB for this lab and future labs. To give yourself some data to work with instead of starting with an empty database in our development environment, you need to 'seed' the database with some starter data. Seed data and the seed script are stored in the top level directory `database`. To seed the database, move into that directory and run `./mongoseed.sh` (or `.\mongoseed.bat` on Windows). This will take each of the JSON files in `database/seed/` and insert their elements into the `dev` database.
+
+Take a look at [DEVELOPMENT.md][development] for more on setting up Mongo and using MongoDB in VS Code.
 
 ## Live updates for Gradle test or run
 
@@ -212,6 +221,7 @@ to [LABTASKS.md][labtasks], where most of the actual work of the lab is describe
 [gradle]: https://gradle.org/
 [jsonvue-chrome]: https://chrome.google.com/webstore/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc?hl=en
 [labtasks]: LABTASKS.md
+[development]: DEVELOPMENT.md
 [local]: http://localhost:4567/
 [rest-best-practices]: https://medium.com/@mwaysolutions/10-best-practices-for-better-restful-api-cbe81b06f291
 

@@ -4,7 +4,6 @@
 - [Exploring the project](#exploring-the-project)
 - [Exploring the server](#exploring-the-server)
   - [Use Thunder Client to explore API output](#use-thunder-client-to-explore-api-output)
-- [Exploring the client](#exploring-the-client)
 - [Use GitHub Projects to support Agile development](#use-github-projects-to-support-agile-development)
   - [Setting up the GitHub Projects board](#setting-up-the-github-projects-board)
 - [Creating a GitHub projects board](#creating-a-github-projects-board)
@@ -88,13 +87,7 @@ Change that to `http://localhost:4567/api/<the-route-you-want-to-test>` (ie. `ht
 
 The response will be on the right column. You can also change the query parameters from this window.
 
-## Exploring the client
-
-The client resources are in `client`, which
-contains the necessary HTML, CSS, and JavaScript files to
-construct the _very_ simple client-side web app.
-
-:question: Answer questions _6_ and _7_ [QUESTIONS](./LABTASKS.md#questions)
+:question: Answer question _6_ [QUESTIONS](./LABTASKS.md#questions)
 
 ## Use GitHub Projects to support Agile development
 
@@ -335,8 +328,6 @@ _why_ we'd want to have it.
       Explain what happens when a user accesses each of the
       following URLs:
 
-  - [ ] :question: The page `users`
-    - <http://localhost:4567/users.html>
   - [ ] :question: The page `api/users`
     - <http://localhost:4567/api/users>
   - [ ] :question: The page `api/users?age=25`
@@ -346,11 +337,9 @@ _why_ we'd want to have it.
 
 :bangbang: Have your project running (see the README), and use these links -- they should actually work and generate results from your server.
 
-- [ ] :question: _6_ What is in the `client` folder? What is the purpose of each of the HTML files there?
-
-- [ ] :question: _7_ Describe what happens when you filter users by age in the client.
+- [ ] :question: _6_ Describe what happens when you filter users by age in the client.
 
   - [ ] What exactly is the request that is sent to the server?
   - [ ] How does the server react to the request?
   - [ ] What reply does the database send back to the server?
-  - [ ] What is the response to the client?
+  - [ ] What is the response to the client (What information is included in the response can you see in Thunder Client)?
