@@ -8,8 +8,8 @@
 - [Use GitHub Projects to support Agile development](#use-github-projects-to-support-agile-development)
   - [Setting up the GitHub Projects board](#setting-up-the-github-projects-board)
 - [Creating a GitHub projects board](#creating-a-github-projects-board)
-- [Make sure your project is linked to your repository](#make-sure-your-project-is-linked-to-your-repository)
-  - [Using the board](#using-the-board)
+- [Making sure your project is linked to your repository](#making-sure-your-project-is-linked-to-your-repository)
+- [Using the project board](#using-the-project-board)
 - [The epics/features](#the-epicsfeatures)
 - [Questions](#questions)
 
@@ -156,14 +156,16 @@ Once you have created a milestone, you will be ready to create a GitHub Projects
    5. [ ] Your project board should look something like this:
 ![Image](https://github.com/user-attachments/assets/b4015b48-78fd-40b7-a360-62c08b15fa1f)
 
-## Make sure your project is linked to your repository
+## Making sure your project is linked to your repository
 
 1. [ ] Navigate back to your repository
 2. [ ] Click the `Projects` tab on your GitHub repository
 3. [ ] You should now see the project you just made
 4. [ ] Select the `Link a Project` button
 5. [ ] Make sure your project has a checked box in the dropdown
-6. [ ] Now go to the `Issues` tab in you repository and make sure you have all the issues you added to your project  
+6. [ ] Now go to the `Issues` tab in you repository and make sure you have all the issues you added to your project 
+
+## Using the project board  
 
 The view that you see will have several views, each focused on a
 different way of thinking about the state of your project.
@@ -181,10 +183,6 @@ your initial planning is probably a Good Thing.
 You should move the issues you really expect to do into the `Ready`
 track, leaving all the other issues (that you may
 or may not do) in the `Backlog` track.
-
-Now, you are ready to get started working on the coding part of this lab!
-
-### Using the board
 
 You'll then need to keep an eye on your board throughout the
 lab, using it to guide your decisions about what to work on,
@@ -227,6 +225,8 @@ Once the issue passes review, you should
 - Merge the associated feature branch into master by accepting the (perhaps modified) pull request
 - Move the issue to the `Done` track (or, fee free to create more tracks as you see fit)
 - There are ways to automate the moves through the tracks based on what's happening in GitHub, but we won't look at that in detail for this lab.
+
+Now, you are ready to get started working on the coding part of this lab!
 
 ## The epics/features
 
