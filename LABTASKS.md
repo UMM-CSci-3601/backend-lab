@@ -7,6 +7,8 @@
 - [Exploring the client](#exploring-the-client)
 - [Use GitHub Projects to support Agile development](#use-github-projects-to-support-agile-development)
   - [Setting up the GitHub Projects board](#setting-up-the-github-projects-board)
+- [Creating a GitHub projects board](#creating-a-github-projects-board)
+- [Linking your project board to your repository](#linking-your-project-board-to-your-repository)
   - [Using the board](#using-the-board)
 - [The epics/features](#the-epicsfeatures)
 - [Questions](#questions)
@@ -133,11 +135,24 @@ Once you have created a milestone, you will be ready to create a GitHub Projects
 > or refactoring. Those activities should be "baked in" to your work flow, and not considered
 > separate (and therefore to some degree optional) activities.
 
-5. [ ] Click the `Projects` tab on your GitHub repository
-6. [ ] Use the green dropdown by the button to make that button read
-       `New project` (then, click `New project`)
-7. [ ] In the popup dialog, choose the `Feature release` template and then
-       click the green `Create` button
+## Creating a GitHub projects board
+
+1. [ ] Click the `Projects` tab on your GitHub repository
+2. [ ] Select the green `+ New Project` button
+3. [ ] In the popup dialog, choose the `Feature release` template
+4. [ ] Use the text box at the top of the popup dialog to give your project a reasonable name
+5. [ ] Click the green `Create` button
+6. [ ] Create drafts for your issues
+   1. [ ] Select the first text box on the project board
+   2. [ ] Type the name of your first issue and press enter
+   3. [ ] Repeat until all of your issues have been entered
+   4. [ ] Your screen should look something like this: 
+  
+## Linking your project board to your repository
+
+1. [ ] Click the `Projects` tab on your GitHub repository
+2. [ ] Select the green `+ New Project` button
+3. [ ] In the popup dialog, choose the `Feature release` template
 
 The view that you see will have several views, each focused on a
 different way of thinking about the state of your project.
