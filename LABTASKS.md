@@ -144,17 +144,17 @@ Once you have created a milestone, you will be ready to create a GitHub Projects
 4. [ ] Use the text box at the top of the popup dialog to give your project a reasonable name
 5. [ ] Click the green `Create` button
 6. [ ] Create drafts for each lab task in the coding part of the lab
-   1. [ ] Select the next available text box on the project board
-   2. [ ] Type the name of your task and press enter
-   3. [ ] Repeat until all of your tasks have been entered as drafts
-   4. [ ] Your screen should look something like this:
+   - Select the next available text box on the project board
+   - Type the name of your task and press enter
+   - Repeat until all of your tasks have been entered as drafts
+   - Your screen should look something like this:
 ![Image](https://github.com/user-attachments/assets/2a4e044d-adfb-4842-a35d-0232dab04f80)
 7. [ ] Now it is time to convert your drafts to issues and link them to your repository
-   1. [ ] Hover over your next unconverted draft task and click the down arrow on the left of the line (visible near the first issue listed in the image below)
-   2. [ ] Select `Convert to issue` from the dropdown menu
-   3. [ ] Search for _your_ repository in the dropdown menu and select it (:warning: Be careful to choose _your_ repository)
-   4. [ ] Repeat this for each of your drafts so each of them now has a green circle icon to the left of the title
-   5. [ ] Your project board should look something like this:
+   - Hover over your next unconverted draft task and click the down arrow on the left of the line (visible near the first issue listed in the image below)
+   - Select `Convert to issue` from the dropdown menu
+   - Search for _your_ repository in the dropdown menu and select it ( :warning: Be careful to choose _your_ repository)
+   - Repeat this for each of your drafts so each of them now has a green circle icon to the left of the title
+   - Your project board should look something like this:
 ![Image](https://github.com/user-attachments/assets/b4015b48-78fd-40b7-a360-62c08b15fa1f)
 
 ### Making sure your project is linked to your repository
