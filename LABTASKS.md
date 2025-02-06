@@ -159,6 +159,8 @@ Once you have created a milestone, you will be ready to create a GitHub Projects
 
 ### Making sure your project is linked to your repository
 
+GitHub has somewhat inconsistent behavior as far as whether or not linking of the GitHub Project to your specific repository actually happens automatically or not. Since we want to be sure you are having a good experience using GitHub Projects, we are providing some guidance about how to be sure the GitHub Project you made is linked to _your_ team's repository.
+
 1. [ ] Navigate back to your repository
 2. [ ] Click the `Projects` tab on your GitHub repository
 3. [ ] You should now see the project you just made
