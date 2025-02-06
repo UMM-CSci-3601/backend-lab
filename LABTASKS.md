@@ -29,10 +29,10 @@ confused now and then you're probably not paying attention. :smile:
 
 Before completing these lab tasks, make sure you have read through [`README.md`](./README.md) and completed the following:
 
-- [ ] Set up your project: [`README.md`](./README.md#setup)
-- [ ] Run your server: [run configuration](./README.md#running-your-project)
-- [ ] Run your server tests: [testing your server](./README.md#testing-your-project)
-- [ ] Check the rubric for the assignment to be sure you understand how you will be graded on your lab work
+- [ ] 1. Set up your project: [`README.md`](./README.md#setup)
+- [ ] 2. Run your server: [run configuration](./README.md#running-your-project)
+- [ ] 3. Run your server tests: [testing your server](./README.md#testing-your-project)
+- [ ] 4. Check the rubric for the assignment to be sure you understand how you will be graded on your lab work
 
 ## Exploring the project
 
@@ -105,12 +105,12 @@ issues and do some planning.
 
 ### Setting a milestone
 
-1. [ ] Go to the `Issues` tab for your repository
-2. [ ] Near the green `New issue` button, there is a button-like thing that says `Milestones` (click it)
-3. [ ] Click the green `New milestone` button
-4. [ ] Create a milestone for the lab that uses the lab's due date
-   1. If you'd like to make multiple, smaller milestones, you may do so
-   2. You can write in other information if you'd like, but at least include the one milestone for the lab's due date
+- [ ] 1. Go to the `Issues` tab for your repository
+- [ ] 2. Near the green `New issue` button, there is a button-like thing that says `Milestones` (click it)
+- [ ] 3. Click the green `New milestone` button
+- [ ] 4. Create a milestone for the lab that uses the lab's due date
+    1. If you'd like to make multiple, smaller milestones, you may do so
+    2. You can write in other information if you'd like, but at least include the one milestone for the lab's due date
 
 Once you have created a milestone, you will be ready to create a GitHub Projects board to act as your visual workspace that is connected to your GitHub repository.
 
@@ -138,35 +138,35 @@ Once you have created a milestone, you will be ready to create a GitHub Projects
 
 ### Creating a GitHub Projects board
 
-1. [ ] Click the `Projects` tab on your GitHub repository
-2. [ ] Select the green `+ New Project` button
-3. [ ] In the popup dialog, choose the `Feature release` template
-4. [ ] Use the text box at the top of the popup dialog to give your project a reasonable name
-5. [ ] Click the green `Create` button
-6. [ ] Create drafts for each lab task in the coding part of the lab
-   - Select the next available text box on the project board
-   - Type the name of your task and press enter
-   - Repeat until all of your tasks have been entered as drafts
-   - Your screen should look something like this:
-![Image](https://github.com/user-attachments/assets/2a4e044d-adfb-4842-a35d-0232dab04f80)
-7. [ ] Now it is time to convert your drafts to issues and link them to your repository
-   - Hover over your next unconverted draft task and click the down arrow on the left of the line (visible near the first issue listed in the image below)
-   - Select `Convert to issue` from the dropdown menu
-   - Search for _your_ repository in the dropdown menu and select it ( :warning: Be careful to choose _your_ repository)
-   - Repeat this for each of your drafts so each of them now has a green circle icon to the left of the title
-   - Your project board should look something like this:
-![Image](https://github.com/user-attachments/assets/b4015b48-78fd-40b7-a360-62c08b15fa1f)
+- [ ] 1. Click the `Projects` tab on your GitHub repository
+- [ ] 2. Select the green `+ New Project` button
+- [ ] 3. In the popup dialog, choose the `Feature release` template
+- [ ] 4. Use the text box at the top of the popup dialog to give your project a reasonable name
+- [ ] 5. Click the green `Create` button
+- [ ] 6. Create drafts for each lab task in the coding part of the lab
+  1. Select the next available text box on the project board
+  2. Type the name of your task and press enter
+  3. Repeat until all of your tasks have been entered as drafts
+  Your screen should look something like this:
+  ![Image](https://github.com/user-attachments/assets/2a4e044d-adfb-4842-a35d-0232dab04f80)
+- [ ] 7. Now it is time to convert your drafts to issues and link them to your repository
+  1. Hover over your next unconverted draft task and click the down arrow on the left of the line (visible near the first issue listed in the image below)
+  2. Select `Convert to issue` from the dropdown menu
+  3. Search for _your_ repository in the dropdown menu and select it ( :warning: Be careful to choose _your_ repository)
+  4. Repeat this for each of your drafts so each of them now has a green circle icon to the left of the title
+  Your project board should look something like this:
+  ![Image](https://github.com/user-attachments/assets/b4015b48-78fd-40b7-a360-62c08b15fa1f)
 
 ### Making sure your project is linked to your repository
 
 GitHub has somewhat inconsistent behavior as far as whether or not linking of the GitHub Project to your specific repository actually happens automatically or not. Since we want to be sure you are having a good experience using GitHub Projects, we are providing some guidance about how to be sure the GitHub Project you made is linked to _your_ team's repository.
 
-1. [ ] Navigate back to your repository
-2. [ ] Click the `Projects` tab on your GitHub repository
-3. [ ] You should now see the project you just made
-4. [ ] Select the `Link a Project` button
-5. [ ] Make sure your project has a checked box in the dropdown
-6. [ ] Now go to the `Issues` tab in you repository and make sure you have all the issues you added to your project
+- [ ] 1. Navigate back to your repository
+- [ ] 2. Click the `Projects` tab on your GitHub repository
+- [ ] 3. You should now see the project you just made
+- [ ] 4. Select the `Link a Project` button
+- [ ] 5. Make sure your project has a checked box in the dropdown
+- [ ] 6. Now go to the `Issues` tab in you repository and make sure you have all the issues you added to your project
 
 ### Using the project board  
 
