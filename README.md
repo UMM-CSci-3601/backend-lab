@@ -116,6 +116,9 @@ To run your server-side tests: while in the `server` directory, run:
 ```
 
 This will run all tests and output info about the run to a test report "website". To see the report open the file in your browser:
+Navigate to `server > build > reports > tests > test` and copy the path of `index.html` by right-clicking on it and selecting `Copy Path`.
+
+Paste this path into your browser's navigation bar. The path should end with:
 
 ```text
 server/build/reports/tests/test/index.html
@@ -127,7 +130,7 @@ It will look something like this:
 
 These test reports are especially helpful when a test fails because you will get the full stack trace there.
 
-When a test fails, you will get a notice in the terminal that there were failing tests along with a path to the report. You can copy that path into your browser to see the report.
+When a test fails, you will get a notice in the terminal that there were failing tests along with a path to the report. You can copy that path into your browser to see the report or navigate to it and copy the path as described above.
 
 ## Checking your code coverage
 
